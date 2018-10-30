@@ -1,0 +1,63 @@
+<html>
+
+<head>
+</head>
+
+<Body>
+
+
+    <h1>La Historia de zorro</h1>
+
+    <p> Zorro (espanhol para "raposa") é um personagem de ficção, criado em 1919 pelo escritor norte-americano Johnston
+        McCulley.[1] Ele é apresentado como o alter-ego de Don Diego de La Vega, um jovem membro da aristocracia
+        californiana, em meados do século XIX, durante a era do domínio mexicano (entre 1821 e 1846), algumas
+        adaptações para o cinema da história de Zorro o colocam durante a época em que era colónia da coroa espanhola.</p>
+
+    <P>Após longo período de educação na Europa,
+        Diego retorna à Califórnia e passa a defender os "fracos e oprimidos", sob uma máscara e uma capa negra,
+        empunhando uma espada e cavalgando um cavalo igualmente negro de nome "Tornado". Sem o disfarce,
+        ele simula ser um homem que se acovarda diante de situações de perigo.</P>
+
+    <p>A figura passaria a ser chamada de "Zorro" pela população,
+        porque seus movimentos e sagacidade lembrariam uma raposa (a tradução em português da palavra espanhola
+        "zorro").
+        O próprio personagem adota a letra "Z" como sua assinatura (três linhas cruzadas),
+        marcando-a com sua espada em paredes e nas roupas de seus inimigos, como sinal de sua passagem.</p>
+
+    <p>Zorro tem sido apresentado em mídias diversas e em diferentes caracterizações,
+        em versões nem sempre correspondentes à original.
+        Foi adaptado para o cinema, em programas de televisão e em histórias em quadrinhos.
+        Zorro também pode ser considerado um representante tanto do gênero swashbuckler (conhecido como capa e espada
+        em português),
+        quanto do faroeste.[3]</p>
+
+    <p>O personagem sofreu mudanças ao longo dos anos, mas a imagem típica dele é um bandido mascarado vestido de preto
+        e que defende o povo da Califórnia contra os governos tirânicos e outros vilões.
+        Ele não só é muito astuto como uma raposa, como as autoridades são incompetentes em tentar capturá-lo, mas ele
+        também se deleita em humilhá-los publicamente.</p>
+
+
+    <center><img src="img/z.jpg" alt="" width="40%"></center>
+    
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script type="text/javascript">
+        $.ajax({
+            url: "localhost:8000",
+            type: "GET",
+            dataType: "localhost"
+
+        }).done(function (resposta) {
+            console.log(resposta);
+
+        }).fail(function (jqXHR, textStatus) {
+            console.log("Request failed: " + textStatus);
+
+        }).always(function () {
+            console.log("completou");
+        });
+    </script>
+
+
+</Body>
+
+</html>
