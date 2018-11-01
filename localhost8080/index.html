@@ -1,0 +1,36 @@
+<html>
+
+  <head>
+  </head>
+
+  <Body>
+
+  <h1>Alunos da sala</h1>
+
+  <button>Buscar alunos</button>
+
+  <ul id="lista">
+    
+  </ul>
+
+  <center><img src="./img/z.jpg" alt="" width="40%"></center>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script>
+    var lista = document.getElementById("lista");
+    $(document).ready(function () {
+      $("button").click(function () {
+        $.ajax({
+          url: "/aluno.json", success: function (result) {
+            console.log(lista);
+            lista.append(result);
+          }
+        });
+      });
+    });
+  
+  </script>
+
+  </Body>
+
+</html>
